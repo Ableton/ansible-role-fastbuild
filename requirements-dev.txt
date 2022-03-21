@@ -6,13 +6,13 @@
 #
 ansible==5.5.0
     # via -r requirements-dev.in
-ansible-compat==2.0.0
+ansible-compat==2.0.2
     # via ansible-lint
 ansible-core==2.12.3
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.0.0
+ansible-lint==6.0.1
     # via -r requirements-dev.in
 bracex==2.1.1
     # via wcmatch
