@@ -12,8 +12,12 @@ ansible-core==2.12.5
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.0.2
+ansible-lint==6.1.0
     # via -r requirements-dev.in
+attrs==21.4.0
+    # via
+    #   jsonschema
+    #   pytest
 bracex==2.1.1
     # via wcmatch
 cffi==1.14.6
@@ -26,22 +30,35 @@ cryptography==3.4.8
     # via ansible-core
 enrich==1.2.6
     # via ansible-lint
+iniconfig==1.1.1
+    # via pytest
 jinja2==3.0.1
     # via ansible-core
+jsonschema==4.5.1
+    # via ansible-lint
 markupsafe==2.0.1
     # via jinja2
 packaging==21.0
     # via
     #   ansible-core
     #   ansible-lint
+    #   pytest
 pathspec==0.9.0
     # via yamllint
+pluggy==1.0.0
+    # via pytest
+py==1.11.0
+    # via pytest
 pycparser==2.20
     # via cffi
 pygments==2.10.0
     # via rich
 pyparsing==2.4.7
     # via packaging
+pyrsistent==0.18.1
+    # via jsonschema
+pytest==7.1.2
+    # via ansible-lint
 pyyaml==5.4.1
     # via
     #   ansible-compat
@@ -58,6 +75,8 @@ ruamel-yaml==0.17.14
     # via ansible-lint
 subprocess-tee==0.3.5
     # via ansible-compat
+tomli==2.0.1
+    # via pytest
 wcmatch==8.2
     # via ansible-lint
 yamllint==1.26.3
