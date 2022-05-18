@@ -6,13 +6,13 @@
 #
 ansible==5.7.1
     # via -r requirements-dev.in
-ansible-compat==2.0.2
+ansible-compat==2.0.4
     # via ansible-lint
 ansible-core==2.12.5
     # via
     #   ansible
     #   ansible-lint
-ansible-lint==6.1.0
+ansible-lint==6.2.0
     # via -r requirements-dev.in
 attrs==21.4.0
     # via
