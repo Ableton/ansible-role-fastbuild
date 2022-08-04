@@ -27,6 +27,7 @@ devToolsProject.run(
         }
       },
       groovylint: { groovylint.checkSingleFile(path: './Jenkinsfile') },
+      yamllint: { data.venv.run('yamllint --strict .') },
     )
   },
   deployWhen: { devToolsProject.shouldDeploy(defaultBranch: 'main') },
