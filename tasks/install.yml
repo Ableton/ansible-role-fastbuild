@@ -1,6 +1,6 @@
 ---
 - name: Initialize should_install_fbuild variable
-  set_fact:
+  ansible.builtin.set_fact:
     should_install_fbuild: false
 
 - name: Get current version of FASTBuild
@@ -10,7 +10,7 @@
   register: fbuild_version
 
 - name: Determine whether to install FASTBuild
-  set_fact:
+  ansible.builtin.set_fact:
     should_install_fbuild: true
   when: fbuild_version is not defined or fbuild_version is failed
 
