@@ -4,7 +4,7 @@
     should_install_fbuild: false
 
 - name: Get current version of FASTBuild
-  win_shell: "{{ fastbuild_path_win }}\\FBuild.exe -version | \
+  ansible.windows.win_shell: "{{ fastbuild_path_win }}\\FBuild.exe -version | \
     grep {{ fastbuild_version }}"
   ignore_errors: true
   register: fbuild_version
@@ -15,28 +15,28 @@
   when: fbuild_version is not defined or fbuild_version is failed
 
 - name: Create temporary directory for downloads
-  win_tempfile:
+  ansible.windows.win_tempfile:
     state: directory
     prefix: fastbuild
   register: fastbuild_temp_dir
   when: should_install_fbuild
 
 - name: Download FASTBuild zipfile
-  win_get_url:
+  ansible.windows.win_get_url:
     url: "{{ fastbuild_url_base }}/v{{ fastbuild_version }}\
       /FASTBuild-Windows-{{ fastbuild_arch }}-v{{ fastbuild_version }}.zip"
     dest: "{{ fastbuild_temp_dir.path }}/FASTBuild.zip"
   when: should_install_fbuild
 
 - name: Unzip FASTBuild archive
-  win_unzip:
+  ansible.windows.win_unzip:
     src: "{{ fastbuild_temp_dir.path }}/FASTBuild.zip"
     dest: "{{ fastbuild_temp_dir.path }}"
     delete_archive: true
   when: should_install_fbuild
 
 - name: Install FASTBuild executables
-  win_shell: "Move-Item -Force \
+  ansible.windows.win_shell: "Move-Item -Force \
     -Path '{{ fastbuild_temp_dir.path }}\\{{ fbuild_exe_item }}' \
     '{{ fastbuild_path_win }}'"
   with_items:
@@ -47,7 +47,7 @@
   when: should_install_fbuild
 
 - name: Allow all users to run FASTBuild executables
-  win_acl:
+  ansible.windows.win_acl:
     path: "{{ fastbuild_path_win }}\\{{ fbuild_exe_item }}"
     user: BUILTIN\Users
     rights: ReadAndExecute
