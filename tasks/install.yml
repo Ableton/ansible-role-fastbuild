@@ -29,7 +29,7 @@
   when: should_install_fbuild
 
 - name: Unzip FASTBuild archive
-  ansible.windows.win_unzip:
+  community.windows.win_unzip:
     src: "{{ fastbuild_temp_dir.path }}/FASTBuild.zip"
     dest: "{{ fastbuild_temp_dir.path }}"
     delete_archive: true
