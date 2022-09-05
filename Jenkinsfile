@@ -7,6 +7,9 @@ devToolsProject.run(
   setup: { data ->
     Object venv = virtualenv.createWithPyenv('3.10.3')
     venv.run('pip install -r requirements-dev.txt')
+    data['rolesPath'] = "${env.WORKSPACE}/.ansible/roles"
+    venv.run("ansible-galaxy install --no-deps --roles-path ${data.rolesPath}" +
+      " git+https://github.com/${params.JENKINS_REPO_SLUG},${params.JENKINS_COMMIT}")
     data['venv'] = venv
   },
   test: { data ->
