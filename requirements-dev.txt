@@ -4,14 +4,10 @@
 #
 #    pip-compile --output-file=requirements-dev.txt requirements-dev.in
 #
-ansible==6.1.0
-    # via -r requirements-dev.in
 ansible-compat==2.1.0
     # via ansible-lint
 ansible-core==2.13.1
-    # via
-    #   ansible
-    #   ansible-lint
+    # via ansible-lint
 ansible-lint==6.3.0
     # via -r requirements-dev.in
 attrs==21.4.0
@@ -83,3 +79,6 @@ wcmatch==8.2
     # via ansible-lint
 yamllint==1.26.3
     # via ansible-lint
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
