@@ -1,6 +1,6 @@
 ---
 - name: Include tasks to install FASTBuild
-  import_tasks: "install.yml"
+  ansible.builtin.import_tasks: "install.yml"
 
 - name: Include tasks to configure FASTBuild
-  import_tasks: "configure.yml"
+  ansible.builtin.import_tasks: "configure.yml"

@@ -2,18 +2,18 @@
 - name: Ensure FASTBuild cache directory exists
   become: true
   become_user: "{{ fastbuild_cache_owner }}"
-  win_file:
+  ansible.windows.win_file:
     path: "{{ fastbuild_cache_dir }}"
     state: directory
 
 - name: Set FASTBuild cache path environment variable
-  win_environment:
+  ansible.windows.win_environment:
     name: "FASTBUILD_CACHE_PATH"
     value: "{{ fastbuild_cache_dir }}"
     level: machine
 
 - name: Add scheduled task to trim FASTBuild cache
-  win_scheduled_task:
+  community.windows.win_scheduled_task:
     name: "Trim FASTBuild cache"
     username: "{{ fastbuild_cache_owner }}"
     actions:
