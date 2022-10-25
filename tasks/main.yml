@@ -1,4 +1,6 @@
 ---
-- import_tasks: "install.yml"
+- name: Include tasks to install FASTBuild
+  import_tasks: "install.yml"
 
-- import_tasks: "configure.yml"
+- name: Include tasks to configure FASTBuild
+  import_tasks: "configure.yml"
