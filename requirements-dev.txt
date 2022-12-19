@@ -10,7 +10,7 @@ ansible-core==2.14.1
     # via
     #   -r requirements-dev.in
     #   ansible-lint
-ansible-lint==6.9.1
+ansible-lint==6.10.0
     # via -r requirements-dev.in
 attrs==22.1.0
     # via jsonschema
@@ -69,7 +69,7 @@ ruamel-yaml==0.17.21
     # via ansible-lint
 ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
-subprocess-tee==0.4.0
+subprocess-tee==0.4.1
     # via ansible-compat
 tomli==2.0.1
     # via black
