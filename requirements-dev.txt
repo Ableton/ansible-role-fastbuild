@@ -10,7 +10,7 @@ ansible-core==2.14.1
     # via
     #   -r requirements-dev.in
     #   ansible-lint
-ansible-lint==6.10.2
+ansible-lint==6.11.0
     # via -r requirements-dev.in
 attrs==22.2.0
     # via jsonschema
@@ -22,8 +22,6 @@ cffi==1.15.1
     # via cryptography
 click==8.1.3
     # via black
-commonmark==0.9.1
-    # via rich
 cryptography==39.0.0
     # via ansible-core
 filelock==3.9.0
@@ -34,8 +32,12 @@ jsonschema==4.17.3
     # via
     #   ansible-compat
     #   ansible-lint
-markupsafe==2.1.1
+markdown-it-py==2.1.0
+    # via rich
+markupsafe==2.1.2
     # via jinja2
+mdurl==0.1.2
+    # via markdown-it-py
 mypy-extensions==0.4.3
     # via black
 packaging==23.0
@@ -63,7 +65,7 @@ pyyaml==6.0
     #   yamllint
 resolvelib==0.8.1
     # via ansible-core
-rich==13.1.0
+rich==13.2.0
     # via ansible-lint
 ruamel-yaml==0.17.21
     # via ansible-lint
