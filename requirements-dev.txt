@@ -45,7 +45,7 @@ packaging==23.0
     #   ansible-compat
     #   ansible-core
     #   ansible-lint
-pathspec==0.10.3
+pathspec==0.11.0
     # via
     #   black
     #   yamllint
@@ -65,7 +65,7 @@ pyyaml==6.0
     #   yamllint
 resolvelib==0.8.1
     # via ansible-core
-rich==13.2.0
+rich==13.3.1
     # via ansible-lint
 ruamel-yaml==0.17.21
     # via ansible-lint
