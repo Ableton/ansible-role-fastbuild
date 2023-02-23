@@ -28,7 +28,7 @@ jinja2==3.1.2
     # via ansible-core
 jsonschema==4.17.3
     # via ansible-lint
-markdown-it-py==2.1.0
+markdown-it-py==2.2.0
     # via rich
 markupsafe==2.1.2
     # via jinja2
