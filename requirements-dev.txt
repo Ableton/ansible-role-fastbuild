@@ -8,7 +8,7 @@ ansible-core==2.14.4
     # via
     #   -r requirements-dev.in
     #   ansible-lint
-ansible-lint==6.14.6
+ansible-lint==6.15.0
     # via -r requirements-dev.in
 attrs==23.1.0
     # via jsonschema
@@ -22,7 +22,7 @@ click==8.1.3
     # via black
 cryptography==40.0.2
     # via ansible-core
-filelock==3.11.0
+filelock==3.12.0
     # via ansible-lint
 jinja2==3.1.2
     # via ansible-core
@@ -49,7 +49,7 @@ platformdirs==3.2.0
     # via black
 pycparser==2.21
     # via cffi
-pygments==2.15.0
+pygments==2.15.1
     # via rich
 pyrsistent==0.19.3
     # via jsonschema
@@ -72,8 +72,5 @@ tomli==2.0.1
     # via black
 wcmatch==8.4.1
     # via ansible-lint
-yamllint==1.30.0
+yamllint==1.31.0
     # via ansible-lint
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
