@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements-dev.txt requirements-dev.in
 #
-ansible-core==2.14.4
+ansible-core==2.14.5
     # via
     #   -r requirements-dev.in
     #   ansible-lint
@@ -45,7 +45,7 @@ pathspec==0.11.1
     # via
     #   black
     #   yamllint
-platformdirs==3.2.0
+platformdirs==3.5.0
     # via black
 pycparser==2.21
     # via cffi
@@ -60,7 +60,7 @@ pyyaml==6.0
     #   yamllint
 resolvelib==0.8.1
     # via ansible-core
-rich==13.3.4
+rich==13.3.5
     # via ansible-lint
 ruamel-yaml==0.17.21
     # via ansible-lint
