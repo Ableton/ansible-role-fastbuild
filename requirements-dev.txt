@@ -62,7 +62,7 @@ resolvelib==0.8.1
     # via ansible-core
 rich==13.3.5
     # via ansible-lint
-ruamel-yaml==0.17.21
+ruamel-yaml==0.17.24
     # via ansible-lint
 ruamel-yaml-clib==0.2.7
     # via ruamel-yaml
