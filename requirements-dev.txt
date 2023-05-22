@@ -4,11 +4,11 @@
 #
 #    pip-compile --output-file=requirements-dev.txt requirements-dev.in
 #
-ansible-core==2.14.5
+ansible-core==2.15.0
     # via
     #   -r requirements-dev.in
     #   ansible-lint
-ansible-lint==6.16.0
+ansible-lint==6.16.2
     # via -r requirements-dev.in
 attrs==23.1.0
     # via jsonschema
@@ -58,7 +58,7 @@ pyyaml==6.0
     #   ansible-core
     #   ansible-lint
     #   yamllint
-resolvelib==0.8.1
+resolvelib==1.0.1
     # via ansible-core
 rich==13.3.5
     # via ansible-lint
