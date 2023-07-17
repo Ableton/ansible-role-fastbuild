@@ -16,12 +16,7 @@ devToolsProject.run(
   test: { data ->
     data.venv.inside {
       parallel(
-        'ansible-lint': {
-          sh(
-            label: 'ansible-lint',
-            script: 'ansible-lint --strict --offline -c .ansible-lint.yml',
-          )
-        },
+        'ansible-lint': { ansibleUtils.ansibleLint() },
         groovylint: { groovylint.checkSingleFile(path: './Jenkinsfile') },
         yamllint: { sh 'yamllint --strict .' },
       )
