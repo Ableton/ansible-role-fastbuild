@@ -1,4 +1,4 @@
-library(identifier: 'ableton-utils@0.23', changelog: false)
+library(identifier: 'ableton-utils@0.24', changelog: false)
 library(identifier: 'groovylint@0.13', changelog: false)
 library(identifier: 'python-utils@0.13', changelog: false)
 
@@ -16,12 +16,7 @@ devToolsProject.run(
   test: { data ->
     data.venv.inside {
       parallel(
-        'ansible-lint': {
-          sh(
-            label: 'ansible-lint',
-            script: 'ansible-lint --strict --offline -c .ansible-lint.yml',
-          )
-        },
+        'ansible-lint': { ansibleUtils.ansibleLint() },
         groovylint: { groovylint.checkSingleFile(path: './Jenkinsfile') },
         yamllint: { sh 'yamllint --strict .' },
       )
