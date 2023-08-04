@@ -39,7 +39,7 @@
   ansible.windows.win_shell: "Move-Item -Force \
     -Path '{{ fastbuild_temp_dir.path }}\\{{ fbuild_exe_item }}' \
     '{{ fastbuild_path_win }}'"
-  with_items:
+  loop:
     - FBuild.exe
     - FBuildWorker.exe
   loop_control:
@@ -52,7 +52,7 @@
     user: BUILTIN\Users
     rights: ReadAndExecute
     type: allow
-  with_items:
+  loop:
     - FBuild.exe
     - FBuildWorker.exe
   loop_control:
