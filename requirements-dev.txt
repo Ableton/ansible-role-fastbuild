@@ -19,7 +19,7 @@ attrs==23.1.0
     #   referencing
 black==23.7.0
     # via ansible-lint
-bracex==2.3.post1
+bracex==2.4
     # via wcmatch
 certifi==2023.7.22
     # via requests
@@ -102,7 +102,7 @@ typing-extensions==4.7.1
     # via filelock
 urllib3==2.0.4
     # via requests
-wcmatch==8.4.1
+wcmatch==8.5
     # via ansible-lint
 yamllint==1.32.0
     # via ansible-lint
