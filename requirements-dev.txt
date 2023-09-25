@@ -11,7 +11,7 @@ ansible-core==2.15.4
     #   -r requirements-dev.in
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.19.0
+ansible-lint==6.20.0
     # via -r requirements-dev.in
 attrs==23.1.0
     # via
@@ -37,7 +37,7 @@ idna==3.4
     # via requests
 jinja2==3.1.2
     # via ansible-core
-jsonschema==4.19.0
+jsonschema==4.19.1
     # via
     #   ansible-compat
     #   ansible-lint
@@ -98,9 +98,9 @@ subprocess-tee==0.4.1
     #   ansible-lint
 tomli==2.0.1
     # via black
-typing-extensions==4.7.1
+typing-extensions==4.8.0
     # via black
-urllib3==2.0.4
+urllib3==2.0.5
     # via requests
 wcmatch==8.5
     # via ansible-lint
