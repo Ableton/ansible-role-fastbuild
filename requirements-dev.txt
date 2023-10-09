@@ -11,7 +11,7 @@ ansible-core==2.15.4
     #   -r requirements-dev.in
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.20.2
+ansible-lint==6.20.3
     # via -r requirements-dev.in
 attrs==23.1.0
     # via
@@ -62,7 +62,7 @@ pathspec==0.11.2
     #   ansible-lint
     #   black
     #   yamllint
-platformdirs==3.10.0
+platformdirs==3.11.0
     # via black
 pycparser==2.21
     # via cffi
@@ -84,13 +84,13 @@ resolvelib==1.0.1
     # via ansible-core
 rich==13.6.0
     # via ansible-lint
-rpds-py==0.10.3
+rpds-py==0.10.4
     # via
     #   jsonschema
     #   referencing
-ruamel-yaml==0.17.33
+ruamel-yaml==0.17.35
     # via ansible-lint
-ruamel-yaml-clib==0.2.7
+ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
 subprocess-tee==0.4.1
     # via
