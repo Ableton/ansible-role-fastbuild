@@ -11,7 +11,7 @@ ansible-core==2.16.0
     #   -r requirements-dev.in
     #   ansible-compat
     #   ansible-lint
-ansible-lint==6.22.0
+ansible-lint==6.22.1
     # via -r requirements-dev.in
 attrs==23.1.0
     # via
@@ -29,7 +29,7 @@ charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via black
-cryptography==41.0.6
+cryptography==41.0.7
     # via ansible-core
 filelock==3.13.1
     # via ansible-lint
@@ -41,7 +41,7 @@ jsonschema==4.20.0
     # via
     #   ansible-compat
     #   ansible-lint
-jsonschema-specifications==2023.11.1
+jsonschema-specifications==2023.11.2
     # via jsonschema
 markdown-it-py==3.0.0
     # via rich
@@ -74,7 +74,7 @@ pyyaml==6.0.1
     #   ansible-core
     #   ansible-lint
     #   yamllint
-referencing==0.31.0
+referencing==0.31.1
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -84,7 +84,7 @@ resolvelib==1.0.1
     # via ansible-core
 rich==13.7.0
     # via ansible-lint
-rpds-py==0.13.1
+rpds-py==0.13.2
     # via
     #   jsonschema
     #   referencing
