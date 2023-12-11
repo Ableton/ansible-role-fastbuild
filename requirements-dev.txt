@@ -6,7 +6,7 @@
 #
 ansible-compat==4.1.10
     # via ansible-lint
-ansible-core==2.16.0
+ansible-core==2.16.1
     # via
     #   -r requirements-dev.in
     #   ansible-compat
@@ -57,12 +57,12 @@ packaging==23.2
     #   ansible-core
     #   ansible-lint
     #   black
-pathspec==0.11.2
+pathspec==0.12.1
     # via
     #   ansible-lint
     #   black
     #   yamllint
-platformdirs==4.0.0
+platformdirs==4.1.0
     # via black
 pycparser==2.21
     # via cffi
@@ -74,7 +74,7 @@ pyyaml==6.0.1
     #   ansible-core
     #   ansible-lint
     #   yamllint
-referencing==0.31.1
+referencing==0.32.0
     # via
     #   jsonschema
     #   jsonschema-specifications
@@ -98,7 +98,7 @@ subprocess-tee==0.4.1
     #   ansible-lint
 tomli==2.0.1
     # via black
-typing-extensions==4.8.0
+typing-extensions==4.9.0
     # via black
 urllib3==2.1.0
     # via requests
