@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements-dev.txt requirements-dev.in
 #
-ansible-compat==4.1.10
+ansible-compat==4.1.11
     # via ansible-lint
 ansible-core==2.16.2
     # via
@@ -84,7 +84,7 @@ resolvelib==1.0.1
     # via ansible-core
 rich==13.7.0
     # via ansible-lint
-rpds-py==0.16.2
+rpds-py==0.17.1
     # via
     #   jsonschema
     #   referencing
