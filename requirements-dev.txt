@@ -45,7 +45,7 @@ mdurl==0.1.2
     # via markdown-it-py
 mypy-extensions==1.0.0
     # via black
-packaging==23.2
+packaging==24.0
     # via
     #   ansible-compat
     #   ansible-core
