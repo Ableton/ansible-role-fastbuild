@@ -90,7 +90,7 @@ subprocess-tee==0.4.1
     #   ansible-lint
 tomli==2.0.1
     # via black
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via black
 wcmatch==8.5.1
     # via ansible-lint
