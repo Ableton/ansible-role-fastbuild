@@ -6,12 +6,12 @@
 #
 ansible-compat==24.6.1
     # via ansible-lint
-ansible-core==2.17.0
+ansible-core==2.17.1
     # via
     #   -r requirements-dev.in
     #   ansible-compat
     #   ansible-lint
-ansible-lint==24.6.0
+ansible-lint==24.6.1
     # via -r requirements-dev.in
 attrs==23.2.0
     # via
@@ -27,9 +27,9 @@ click==8.1.7
     # via black
 cryptography==42.0.8
     # via ansible-core
-filelock==3.15.1
+filelock==3.15.4
     # via ansible-lint
-importlib-metadata==7.1.0
+importlib-metadata==7.2.1
     # via ansible-lint
 jinja2==3.1.4
     # via ansible-core
@@ -86,7 +86,7 @@ ruamel-yaml==0.18.6
     # via ansible-lint
 ruamel-yaml-clib==0.2.8
     # via ruamel-yaml
-subprocess-tee==0.4.1
+subprocess-tee==0.4.2
     # via
     #   ansible-compat
     #   ansible-lint
