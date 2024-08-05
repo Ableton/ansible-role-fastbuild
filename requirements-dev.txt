@@ -13,13 +13,13 @@ ansible-core==2.17.2
     #   ansible-lint
 ansible-lint==24.7.0
     # via -r requirements-dev.in
-attrs==23.2.0
+attrs==24.1.0
     # via
     #   jsonschema
     #   referencing
-black==24.4.2
+black==24.8.0
     # via ansible-lint
-bracex==2.4
+bracex==2.5
     # via wcmatch
 cffi==1.16.0
     # via cryptography
@@ -90,7 +90,7 @@ subprocess-tee==0.4.2
     # via
     #   ansible-compat
     #   ansible-lint
-wcmatch==8.5.2
+wcmatch==9.0
     # via ansible-lint
 yamllint==1.35.1
     # via ansible-lint
