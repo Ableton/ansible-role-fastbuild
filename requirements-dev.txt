@@ -54,7 +54,7 @@ pathspec==0.12.1
     #   ansible-lint
     #   black
     #   yamllint
-platformdirs==4.3.6
+platformdirs==4.3.7
     # via black
 pycparser==2.22
     # via cffi
@@ -87,7 +87,7 @@ typing-extensions==4.12.2
     # via referencing
 wcmatch==10.0
     # via ansible-lint
-yamllint==1.36.1
+yamllint==1.37.0
     # via ansible-lint
 zipp==3.21.0
     # via importlib-metadata
