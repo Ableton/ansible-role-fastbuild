@@ -6,7 +6,7 @@
 #
 ansible-compat==25.1.4
     # via ansible-lint
-ansible-core==2.18.3
+ansible-core==2.18.4
     # via
     #   -r requirements-dev.in
     #   ansible-compat
@@ -71,7 +71,7 @@ referencing==0.36.2
     #   jsonschema-specifications
 resolvelib==1.0.1
     # via ansible-core
-rpds-py==0.23.1
+rpds-py==0.24.0
     # via
     #   jsonschema
     #   referencing
@@ -83,7 +83,7 @@ subprocess-tee==0.4.2
     # via
     #   ansible-compat
     #   ansible-lint
-typing-extensions==4.12.2
+typing-extensions==4.13.0
     # via referencing
 wcmatch==10.0
     # via ansible-lint
