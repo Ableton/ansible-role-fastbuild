@@ -43,7 +43,7 @@ markupsafe==3.0.2
     # via jinja2
 mypy-extensions==1.0.0
     # via black
-packaging==24.2
+packaging==25.0
     # via
     #   ansible-compat
     #   ansible-core
