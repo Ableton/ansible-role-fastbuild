@@ -6,7 +6,7 @@
 #
 ansible-compat==25.1.5
     # via ansible-lint
-ansible-core==2.18.4
+ansible-core==2.18.5
     # via
     #   -r requirements-dev.in
     #   ansible-compat
@@ -29,7 +29,7 @@ cryptography==44.0.2
     # via ansible-core
 filelock==3.18.0
     # via ansible-lint
-importlib-metadata==8.6.1
+importlib-metadata==8.7.0
     # via ansible-lint
 jinja2==3.1.6
     # via ansible-core
@@ -37,11 +37,11 @@ jsonschema==4.23.0
     # via
     #   ansible-compat
     #   ansible-lint
-jsonschema-specifications==2024.10.1
+jsonschema-specifications==2025.4.1
     # via jsonschema
 markupsafe==3.0.2
     # via jinja2
-mypy-extensions==1.0.0
+mypy-extensions==1.1.0
     # via black
 packaging==25.0
     # via
