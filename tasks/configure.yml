@@ -5,12 +5,20 @@
   ansible.windows.win_file:
     path: "{{ fastbuild_cache_dir }}"
     state: directory
-  when: not fastbuild_cache_dir.startswith("\\\\")
+  when:
+    - not fastbuild_cache_dir.startswith("\\\\")
+    - not fastbuild_cache_dir.startswith("http")
 
 - name: Set FASTBuild cache path environment variable
   ansible.windows.win_environment:
     name: "FASTBUILD_CACHE_PATH"
     value: "{{ fastbuild_cache_dir }}"
+    level: machine
+
+- name: Set FASTBuild plugin path environment variable
+  ansible.windows.win_environment:
+    name: FASTBUILD_CACHE_PLUGIN_DLL
+    value: "{{ fastbuild_plugin_path_win }}"
     level: machine
 
 - name: Add scheduled task to trim FASTBuild cache

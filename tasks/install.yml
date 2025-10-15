@@ -58,3 +58,9 @@
   loop_control:
     loop_var: fbuild_exe_item
   when: should_install_fbuild
+
+- name: Download plugin
+  ansible.windows.win_get_url:
+    url: "{{ fastbuild_plugin_url }}"
+    dest: "{{ fastbuild_plugin_path_win }}"
+  when: fastbuild_plugin_url != ""
