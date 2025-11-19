@@ -21,5 +21,10 @@ fastbuild_cache_trim_size_mb: 1024
 # On Windows, this determines where the FASTBuild executables will be extracted.
 fastbuild_path_win: C:\Windows
 
+fastbuild_plugin_path_win: ""
+
+# Download URL of the FASTBuild plugin.
+fastbuild_plugin_url: ""
+
 # Version of FASTBuild to install.
 fastbuild_version: "1.05"
