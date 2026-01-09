@@ -5,7 +5,9 @@
   ansible.windows.win_file:
     path: "{{ fastbuild_cache_dir }}"
     state: directory
-  when: not fastbuild_cache_dir.startswith("\\\\")
+  when:
+    - not fastbuild_cache_dir.startswith("\\\\")
+    - not fastbuild_cache_dir.startswith("http")
 
 - name: Set FASTBuild cache path environment variable
   ansible.windows.win_environment:
