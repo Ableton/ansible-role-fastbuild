@@ -6,6 +6,7 @@
 - name: Get current version of FASTBuild
   ansible.windows.win_shell: "{{ fastbuild_path_win }}\\FBuild.exe -version | \
     grep {{ fastbuild_version }}"
+  changed_when: false
   ignore_errors: true
   register: fbuild_version
 
