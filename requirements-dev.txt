@@ -19,7 +19,7 @@ attrs==26.1.0
     #   referencing
 black==26.10.1
     # via ansible-lint
-bracex==3.2.2
+bracex==3.2.3
     # via wcmatch
 cffi==2.1.1
     # via
@@ -33,7 +33,7 @@ cryptography==50.0.2
     #   ansible-lint
 distro==1.9.0
     # via ansible-lint
-filelock==4.2.9
+filelock==4.2.10
     # via ansible-lint
 jinja2==3.1.6
     # via ansible-core
@@ -89,7 +89,7 @@ subprocess-tee==0.4.2
     #   ansible-lint
 typing-extensions==4.16.0
     # via referencing
-wcmatch==12.0.1
+wcmatch==12.0.3
     # via ansible-lint
 yamllint==1.38.0
     # via ansible-lint
